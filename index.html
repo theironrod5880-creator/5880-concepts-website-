@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#101b35">
 <meta name="description" content="AI-assisted social media marketing, content strategy, and promotional graphics for coaches and consultants.">
-<title>5,880 Concepts | AI Social Media Marketing for Coaches &amp; Consultants</title>
-
-<!-- Canonical + social preview. Replace https://example.com/ with your real domain. -->
-<link rel="canonical" href="https://example.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="5,880 Concepts">
-<meta property="og:title" content="5,880 Concepts | AI Social Media Marketing for Coaches &amp; Consultants">
-<meta property="og:description" content="Turn your expertise into clear, consistent content that connects with your audience — without losing your voice.">
-<meta property="og:url" content="https://example.com/">
-<meta property="og:image" content="https://example.com/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="5,880 Concepts | AI Social Media Marketing for Coaches">
-<meta name="twitter:description" content="Turn your expertise into clear, consistent content that connects with your audience.">
-<meta name="twitter:image" content="https://example.com/og-image.jpg">
+<title>5,880 Concepts | Imagine It. Create It. Grow It.</title>
 
 <style>
 :root {
   --navy: #101b35;
   --navy-light: #1d2e50;
   --gold: #e6b94f;
-  --gold-dark: #8a6414;
   --cream: #faf8f2;
   --white: #ffffff;
   --text: #283248;
-  --muted: #5b6478;
+  --muted: #667085;
   --border: #e5e7eb;
 }
 
@@ -47,42 +34,10 @@ body {
 
 a { color: inherit; }
 
-img { max-width: 100%; display: block; }
-
 .container {
   width: min(1120px, 90%);
   margin: auto;
 }
-
-/* ---------- Accessibility ---------- */
-
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  z-index: 200;
-  background: var(--gold);
-  color: var(--navy);
-  padding: 12px 20px;
-  font-weight: 800;
-  text-decoration: none;
-  border-radius: 0 0 8px 0;
-}
-
-.skip-link:focus {
-  left: 0;
-}
-
-:focus-visible {
-  outline: 3px solid var(--navy);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 5px var(--gold);
-  border-radius: 4px;
-}
-
-section[id] { scroll-margin-top: 24px; }
-
-/* ---------- Header ---------- */
 
 header {
   background: var(--navy);
@@ -129,8 +84,6 @@ header {
 
 .nav-links a:hover { color: var(--gold); }
 
-/* ---------- Buttons ---------- */
-
 .btn {
   display: inline-block;
   background: var(--gold);
@@ -158,8 +111,6 @@ header {
   color: var(--navy);
 }
 
-/* ---------- Hero ---------- */
-
 .hero {
   background: linear-gradient(120deg, #101b35 0%, #1d2e50 65%, #33496d 100%);
   color: white;
@@ -175,17 +126,11 @@ header {
 }
 
 .eyebrow {
-  color: var(--gold-dark);
+  color: var(--gold);
   font-size: .82rem;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-/* Bright gold only where the background is dark enough */
-.hero .eyebrow,
-.contact .eyebrow {
-  color: var(--gold);
 }
 
 h1 {
@@ -211,29 +156,15 @@ h1 span { color: var(--gold); }
 }
 
 .hero-photo {
-  position: relative;
-  margin: 0;
   min-height: 390px;
   border-radius: 18px;
-  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(16,27,53,.02), rgba(16,27,53,.2)),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85")
+    center/cover;
   border: 1px solid rgba(255,255,255,.25);
   box-shadow: 0 24px 65px rgba(0,0,0,.25);
-}
-
-.hero-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(16,27,53,.02), rgba(16,27,53,.35));
-  pointer-events: none;
+  position: relative;
 }
 
 .photo-label {
@@ -241,7 +172,6 @@ h1 span { color: var(--gold); }
   bottom: 18px;
   left: 18px;
   right: 18px;
-  z-index: 2;
   padding: 15px;
   border-radius: 10px;
   background: rgba(16,27,53,.92);
@@ -252,8 +182,6 @@ h1 span { color: var(--gold); }
   display: block;
   color: var(--gold);
 }
-
-/* ---------- Sections ---------- */
 
 section { padding: 76px 0; }
 
@@ -271,8 +199,6 @@ section { padding: 76px 0; }
 }
 
 .section-heading p { color: var(--muted); }
-
-/* ---------- Features ---------- */
 
 .features {
   display: grid;
@@ -308,8 +234,6 @@ section { padding: 76px 0; }
   color: var(--muted);
   margin-bottom: 0;
 }
-
-/* ---------- Pricing ---------- */
 
 .soft-section { background: var(--cream); }
 
@@ -390,32 +314,12 @@ section { padding: 76px 0; }
   color: white;
 }
 
-.price-card .btn-dark:hover {
-  background: var(--navy-light);
-}
-
-.package-note {
-  margin-top: 34px;
-  background: white;
-  border: 1px solid var(--border);
-  border-left: 5px solid var(--gold);
-  border-radius: 10px;
-  padding: 20px 24px;
+.note {
+  text-align: center;
   color: var(--muted);
-  font-size: .9rem;
-  line-height: 1.7;
+  font-size: .88rem;
+  margin-top: 25px;
 }
-
-.package-note strong {
-  display: block;
-  color: var(--navy);
-  font-size: .95rem;
-  margin-bottom: 6px;
-}
-
-.package-note p { margin: 0; }
-
-/* ---------- About ---------- */
 
 .about-grid {
   display: grid;
@@ -425,19 +329,11 @@ section { padding: 76px 0; }
 }
 
 .about-photo {
-  position: relative;
-  margin: 0;
   min-height: 360px;
   border-radius: 16px;
-  overflow: hidden;
-}
-
-.about-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background:
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85")
+    center/cover;
 }
 
 .about-copy h2 {
@@ -447,8 +343,6 @@ section { padding: 76px 0; }
 }
 
 .about-copy p { color: var(--muted); }
-
-/* ---------- Steps ---------- */
 
 .steps {
   display: grid;
@@ -464,14 +358,12 @@ section { padding: 76px 0; }
 }
 
 .step-number {
-  color: var(--gold-dark);
+  color: var(--gold);
   font-size: 2rem;
   font-weight: 900;
 }
 
 .step h3 { color: var(--navy); }
-
-/* ---------- Contact ---------- */
 
 .contact {
   background: var(--navy);
@@ -490,18 +382,13 @@ section { padding: 76px 0; }
   margin: 15px auto 25px;
 }
 
-.contact-email-wrap {
-  margin-top: 20px;
-}
-
 .contact-email {
   display: inline-block;
+  margin-top: 18px;
   color: var(--gold);
   font-weight: 700;
   overflow-wrap: anywhere;
 }
-
-/* ---------- Footer ---------- */
 
 footer {
   background: #0a1225;
@@ -524,21 +411,288 @@ footer a {
   margin-left: 12px;
 }
 
-footer a:hover { color: var(--gold); }
-
-/* ---------- Responsive ---------- */
-
 @media (max-width: 800px) {
   .hero-grid, .about-grid { grid-template-columns: 1fr; }
   .hero { padding: 52px 0; }
   .hero-photo { min-height: 300px; }
-  .about-photo { min-height: 280px; }
   .features, .pricing, .steps { grid-template-columns: 1fr; }
   .nav { align-items: flex-start; flex-direction: column; }
   .nav-links { gap: 14px; }
   section { padding: 55px 0; }
   h1 { letter-spacing: -1px; }
-  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      5,880 CONCEPTS
+      <span>IMAGINE IT. CREATE IT. GROW IT.</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Creative marketing, made practical</div>
+        <h1>Your expertise deserves <span>better marketing.</span></h1>
+        <p>
+          AI-assisted marketing for coaches and consultants.
+          Turn what you know into clear, engaging content that
+          connects with your audience—without losing your voice.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#packages">Explore Our Packages</a>
+          <a class="btn btn-outline" href="#services">See How It Works</a>
+        </div>
+      </div>
+
+      <div class="hero-photo" role="img"
+           aria-label="Professionals collaborating around a desk">
+        <div class="photo-label">
+          <strong>Imagine It. Create It. Grow It.</strong>
+          Practical ideas. Clear messaging. Consistent content.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What we do</div>
+        <h2>Marketing that starts with your ideas</h2>
+        <p>
+          You bring the expertise. We help turn it into useful,
+          organized marketing content for your business.
+        </p>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">✦</div>
+          <h3>Content Strategy</h3>
+          <p>
+            Organize your offers, audience, topics, and posting
+            ideas into a practical content plan.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">✎</div>
+          <h3>AI-Assisted Drafts</h3>
+          <p>
+            Develop caption ideas, opening hooks, calls to action,
+            and educational posts with human review.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">▧</div>
+          <h3>Promotional Graphics</h3>
+          <p>
+            Create consistent visual concepts and editable
+            templates using your brand colors and messaging.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft-section" id="packages">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Simple starting points</div>
+        <h2>Choose the support you need</h2>
+        <p>
+          Clear package options for coaches and consultants.
+          Contact us to confirm scope, availability, and delivery
+          before work begins.
+        </p>
+      </div>
+
+      <div class="pricing">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p>Build a foundation for your content.</p>
+          <div class="price">$79 <small>/ package</small></div>
+          <ul>
+            <li>7-day content plan</li>
+            <li>AI prompt pack for captions and hooks</li>
+            <li>3 editable graphic templates</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn btn-dark"
+             href="mailto:theironrod5880@gmail.com?subject=AI%20Social%20Starter%20Inquiry">
+            Ask About Starter
+          </a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="popular">MORE SUPPORT</span>
+          <h3>Growth</h3>
+          <p>Plan a fuller month of consistent content.</p>
+          <div class="price">$149 <small>/ package</small></div>
+          <ul>
+            <li>30-day content calendar</li>
+            <li>12 post concepts and caption drafts</li>
+            <li>5 branded graphic templates</li>
+            <li>Suggested calls to action</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn"
+             href="mailto:theironrod5880@gmail.com?subject=Growth%20Package%20Inquiry">
+            Ask About Growth
+          </a>
+        </article>
+
+        <article class="price-card">
+          <h3>Campaign</h3>
+          <p>Organize a focused promotional campaign.</p>
+          <div class="price">$299 <small>/ package</small></div>
+          <ul>
+            <li>Campaign outline and messaging</li>
+            <li>15 post concepts and caption drafts</li>
+            <li>6 promotional graphic concepts</li>
+            <li>Suggested publishing schedule</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn btn-dark"
+             href="mailto:theironrod5880@gmail.com?subject=Campaign%20Package%20Inquiry">
+            Ask About Campaign
+          </a>
+        </article>
+      </div>
+
+      <p class="note">
+        Introductory package prices. Packages are proposed service
+        options and must be confirmed before purchase. They do not
+        include paid advertising, ad spend, account management,
+        guaranteed results, or third-party subscription fees.
+        Payment arrangements are confirmed directly before work begins.
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-photo" role="img"
+           aria-label="A team collaborating on creative work"></div>
+      <div class="about-copy">
+        <div class="eyebrow">About 5,880 Concepts</div>
+        <h2>Your ideas. Your voice. A clearer plan.</h2>
+        <p>
+          5,880 Concepts helps coaches and consultants turn their
+          knowledge into practical marketing materials. We combine
+          AI-assisted creativity with human review to help make
+          your message clearer and your content easier to organize.
+        </p>
+        <p>
+          Our approach is simple: understand your goals, develop
+          useful ideas, and create materials for you to review.
+          You stay in control of your message and final approvals.
+        </p>
+        <a class="btn" href="#contact">Let's Talk About Your Goals</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft-section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">How it works</div>
+        <h2>Three simple steps</h2>
+        <p>A straightforward process from first conversation to delivery.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">01</div>
+          <h3>Tell Us About Your Business</h3>
+          <p>
+            Share your audience, services, goals, brand style,
+            and the content you need.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">02</div>
+          <h3>We Develop Your Content</h3>
+          <p>
+            We prepare the agreed content plan and creative
+            materials for your review.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">03</div>
+          <h3>Review and Refine</h3>
+          <p>
+            You review the work, provide feedback, and receive
+            the agreed final materials.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">Your next idea starts here</div>
+      <h2>Let's build your next content plan.</h2>
+      <p>
+        Tell us about your business and what you're trying to
+        accomplish. We'll discuss the right starting point,
+        package scope, and next steps.
+      </p>
+      <a class="btn"
+         href="mailto:theironrod5880@gmail.com?subject=5%2C880%20Concepts%20Inquiry">
+        Contact 5,880 Concepts
+      </a>
+      <br>
+      <a class="contact-email"
+         href="mailto:theironrod5880@gmail.com">
+        theironrod5880@gmail.com
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>5,880 Concepts</strong><br>
+      Imagine It. Create It. Grow It.
+    </div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>© 2026 5,880 Concepts</div>
+  </div>
+</footer>
+
+</body>
+</html>
+-direction: column; align-items: flex-start; }
   footer a { margin-left: 0; margin-right: 14px; }
 }
 

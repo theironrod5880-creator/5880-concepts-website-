@@ -3,121 +3,840 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5,880 Concepts | AI-Assisted Marketing for Coaches & Consultants</title>
+<meta name="theme-color" content="#101b35">
+<meta name="description" content="AI-assisted social media marketing, content strategy, and promotional graphics for coaches and consultants.">
+<title>5,880 Concepts | AI Social Media Marketing for Coaches &amp; Consultants</title>
+
+<!-- Canonical + social preview. Replace https://example.com/ with your real domain. -->
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="5,880 Concepts">
+<meta property="og:title" content="5,880 Concepts | AI Social Media Marketing for Coaches &amp; Consultants">
+<meta property="og:description" content="Turn your expertise into clear, consistent content that connects with your audience — without losing your voice.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5,880 Concepts | AI Social Media Marketing for Coaches">
+<meta name="twitter:description" content="Turn your expertise into clear, consistent content that connects with your audience.">
+<meta name="twitter:image" content="https://example.com/og-image.jpg">
+
 <style>
-:root{--navy:#0A1F44;--gold:#C9A227;--white:#fff;--light:#F5F7FA;--text:#1A1A1A;--muted:#5A6B85}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Open Sans',Arial,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
-h1,h2,h3{font-family:'Montserrat',Arial,sans-serif;line-height:1.2}
-.container{width:min(1100px,92%);margin:0 auto}
-header{background:var(--navy);color:var(--white);padding:1rem 0;position:sticky;top:0;z-index:10}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.logo{display:flex;align-items:center;gap:.6rem;color:var(--white);text-decoration:none;font-weight:700}
-.logo svg{height:40px;width:auto}
-nav a{color:var(--white);text-decoration:none;margin-left:1.2rem;font-size:.95rem}
-.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:.8rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:700;border:2px solid var(--gold)}
-.btn-outline{background:transparent;color:var(--white);border:2px solid var(--gold)}
-.hero{background:linear-gradient(135deg,var(--navy) 0%,#122B5C 100%);color:var(--white);padding:5rem 0}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
-.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:1rem}
-.hero p{font-size:1.15rem;color:#E6ECF7;margin-bottom:1.5rem}
-.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(201,162,39,.5);border-radius:16px;padding:1.5rem}
-.section{padding:4.5rem 0}
-.section-alt{background:var(--light)}
-.section h2{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--navy);margin-bottom:1rem}
-.section p.lead{color:var(--muted);max-width:700px;margin-bottom:2rem}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.card{background:var(--white);border:1px solid #E3E8F0;border-radius:14px;padding:1.5rem;box-shadow:0 8px 24px rgba(10,31,68,.06)}
-.card h3{color:var(--navy);margin-bottom:.5rem}
-.card p{color:var(--muted);font-size:.95rem}
-.price{font-size:2.5rem;color:var(--gold);font-weight:800}
-.footer{background:var(--navy);color:#DCE4F2;padding:3rem 0 1.5rem}
-.footer a{color:var(--gold);text-decoration:none}
-@media(max-width:800px){.hero-grid,.cards{grid-template-columns:1fr}nav{display:none}}
+:root {
+  --navy: #101b35;
+  --navy-light: #1d2e50;
+  --gold: #e6b94f;
+  --gold-dark: #8a6414;
+  --cream: #faf8f2;
+  --white: #ffffff;
+  --text: #283248;
+  --muted: #5b6478;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.65;
+}
+
+a { color: inherit; }
+
+img { max-width: 100%; display: block; }
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+/* ---------- Accessibility ---------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 20px;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--gold);
+  border-radius: 4px;
+}
+
+section[id] { scroll-margin-top: 24px; }
+
+/* ---------- Header ---------- */
+
+header {
+  background: var(--navy);
+  color: white;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.logo span {
+  display: block;
+  color: var(--gold);
+  font-size: .72rem;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 13px 21px;
+  border-radius: 7px;
+  font-weight: 800;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  transition: transform .2s, background .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: #f1cd75;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border-color: rgba(255,255,255,.6);
+}
+
+.btn-outline:hover {
+  color: var(--navy);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(120deg, #101b35 0%, #1d2e50 65%, #33496d 100%);
+  color: white;
+  padding: 76px 0 84px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.eyebrow {
+  color: var(--gold-dark);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Bright gold only where the background is dark enough */
+.hero .eyebrow,
+.contact .eyebrow {
+  color: var(--gold);
+}
+
+h1 {
+  font-size: clamp(2.6rem, 5vw, 4.7rem);
+  line-height: 1.06;
+  margin: 17px 0;
+  letter-spacing: -2px;
+}
+
+h1 span { color: var(--gold); }
+
+.hero p {
+  color: #e2e8f2;
+  font-size: 1.1rem;
+  max-width: 570px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.hero-photo {
+  position: relative;
+  margin: 0;
+  min-height: 390px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.25);
+  box-shadow: 0 24px 65px rgba(0,0,0,.25);
+}
+
+.hero-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(16,27,53,.02), rgba(16,27,53,.35));
+  pointer-events: none;
+}
+
+.photo-label {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  z-index: 2;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(16,27,53,.92);
+  color: white;
+}
+
+.photo-label strong {
+  display: block;
+  color: var(--gold);
+}
+
+/* ---------- Sections ---------- */
+
+section { padding: 76px 0; }
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 42px;
+}
+
+.section-heading h2 {
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  margin: 10px 0;
+}
+
+.section-heading p { color: var(--muted); }
+
+/* ---------- Features ---------- */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.feature {
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 27px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(16,27,53,.05);
+}
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #fff3d1;
+  color: var(--navy);
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+.feature h3 {
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ---------- Pricing ---------- */
+
+.soft-section { background: var(--cream); }
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(16,27,53,.06);
+}
+
+.price-card.featured {
+  border: 2px solid var(--gold);
+  box-shadow: 0 14px 36px rgba(16,27,53,.12);
+  position: relative;
+}
+
+.popular {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.price-card h3 {
+  color: var(--navy);
+  font-size: 1.35rem;
+  margin: 8px 0;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.price small {
+  font-size: .85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.price-card > p { color: var(--muted); }
+
+.price-card ul {
+  padding-left: 20px;
+  margin: 10px 0 25px;
+  flex: 1;
+}
+
+.price-card li { margin-bottom: 9px; }
+
+.price-card .btn {
+  text-align: center;
+  margin-top: auto;
+}
+
+.price-card .btn-dark {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.price-card .btn-dark:hover {
+  background: var(--navy-light);
+}
+
+.package-note {
+  margin-top: 34px;
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--gold);
+  border-radius: 10px;
+  padding: 20px 24px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.7;
+}
+
+.package-note strong {
+  display: block;
+  color: var(--navy);
+  font-size: .95rem;
+  margin-bottom: 6px;
+}
+
+.package-note p { margin: 0; }
+
+/* ---------- About ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.about-photo {
+  position: relative;
+  margin: 0;
+  min-height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-copy h2 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.about-copy p { color: var(--muted); }
+
+/* ---------- Steps ---------- */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.step {
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.step-number {
+  color: var(--gold-dark);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.step h3 { color: var(--navy); }
+
+/* ---------- Contact ---------- */
+
+.contact {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.contact p {
+  color: #e2e8f2;
+  max-width: 650px;
+  margin: 15px auto 25px;
+}
+
+.contact-email-wrap {
+  margin-top: 20px;
+}
+
+.contact-email {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: #0a1225;
+  color: #cbd5e1;
+  padding: 27px 0;
+  font-size: .88rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+footer a:hover { color: var(--gold); }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+  .hero-grid, .about-grid { grid-template-columns: 1fr; }
+  .hero { padding: 52px 0; }
+  .hero-photo { min-height: 300px; }
+  .about-photo { min-height: 280px; }
+  .features, .pricing, .steps { grid-template-columns: 1fr; }
+  .nav { align-items: flex-start; flex-direction: column; }
+  .nav-links { gap: 14px; }
+  section { padding: 55px 0; }
+  h1 { letter-spacing: -1px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  footer a { margin-left: 0; margin-right: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
 </style>
 </head>
 <body>
+
+<a class="skip-link" href="#services">Skip to content</a>
+
 <header>
   <div class="container nav">
-    <a class="logo" href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="160" height="40" role="img" aria-label="5,880 Concepts">
-        <rect width="640" height="160" rx="16" fill="#0A1F44"/>
-        <text x="40" y="96" font-family="Montserrat, Arial, sans-serif" font-size="72" font-weight="700" fill="#C9A227">5,880</text>
-        <text x="300" y="88" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="600" fill="#FFFFFF">CONCEPTS</text>
-        <text x="300" y="120" font-family="Open Sans, Arial, sans-serif" font-size="15" fill="#C9A227">Imagine It. Create It. Grow It.</text>
-      </svg>
+    <a class="logo" href="#home">
+      5,880 CONCEPTS
+      <span>IMAGINE IT. CREATE IT. GROW IT.</span>
     </a>
-    <nav>
+
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
-      <a href="#starter">Starter</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">Process</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-grid">
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Creative marketing, made practical</div>
+        <h1>Your expertise deserves <span>better marketing.</span></h1>
+        <p>
+          AI-assisted marketing for coaches and consultants.
+          Turn what you know into clear, engaging content that
+          connects with your audience&mdash;without losing your voice.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#packages">Explore Our Packages</a>
+          <a class="btn btn-outline" href="#services">See How It Works</a>
+        </div>
+      </div>
+
+      <figure class="hero-photo">
+        <img
+          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85"
+          alt="Professionals collaborating around a desk"
+          width="1000" height="667"
+          loading="eager" fetchpriority="high" decoding="async">
+        <figcaption class="photo-label">
+          <strong>Imagine It. Create It. Grow It.</strong>
+          Practical ideas. Clear messaging. Consistent content.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What we do</div>
+        <h2>Marketing that starts with your ideas</h2>
+        <p>
+          You bring the expertise. We help turn it into useful,
+          organized marketing content for your business.
+        </p>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">&#10022;</div>
+          <h3>Content Strategy</h3>
+          <p>
+            Organize your offers, audience, topics, and posting
+            ideas into a practical content plan.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">&#9998;</div>
+          <h3>AI-Assisted Drafts</h3>
+          <p>
+            Develop caption ideas, opening hooks, calls to action,
+            and educational posts with human review.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">&#9638;</div>
+          <h3>Promotional Graphics</h3>
+          <p>
+            Create consistent visual concepts and editable
+            templates using your brand colors and messaging.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGES ============ -->
+  <section class="soft-section" id="packages">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Simple starting points</div>
+        <h2>Choose the support you need</h2>
+        <p>
+          Clear package options for coaches and consultants.
+          Contact us to confirm scope, availability, and delivery
+          before work begins.
+        </p>
+      </div>
+
+      <div class="pricing">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p>Build a foundation for your content.</p>
+          <div class="price">$79 <small>/ package</small></div>
+          <ul>
+            <li>7-day content plan</li>
+            <li>AI prompt pack for captions and hooks</li>
+            <li>3 editable graphic templates</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn btn-dark"
+             href="mailto:theironrod5880@gmail.com?subject=AI%20Social%20Starter%20Inquiry">
+            Ask About Starter
+          </a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="popular">MORE SUPPORT</span>
+          <h3>Growth</h3>
+          <p>Plan a fuller month of consistent content.</p>
+          <div class="price">$149 <small>/ package</small></div>
+          <ul>
+            <li>30-day content calendar</li>
+            <li>12 post concepts and caption drafts</li>
+            <li>5 branded graphic templates</li>
+            <li>Suggested calls to action</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn"
+             href="mailto:theironrod5880@gmail.com?subject=Growth%20Package%20Inquiry">
+            Ask About Growth
+          </a>
+        </article>
+
+        <article class="price-card">
+          <h3>Campaign</h3>
+          <p>Organize a focused promotional campaign.</p>
+          <div class="price">$299 <small>/ package</small></div>
+          <ul>
+            <li>Campaign outline and messaging</li>
+            <li>15 post concepts and caption drafts</li>
+            <li>6 promotional graphic concepts</li>
+            <li>Suggested publishing schedule</li>
+            <li>One revision round</li>
+          </ul>
+          <a class="btn btn-dark"
+             href="mailto:theironrod5880@gmail.com?subject=Campaign%20Package%20Inquiry">
+            Ask About Campaign
+          </a>
+        </article>
+      </div>
+
+      <div class="package-note">
+        <strong>Please note before you inquire</strong>
+        <p>
+          Introductory package prices. Packages are proposed service options
+          and must be confirmed before purchase. They do not include paid
+          advertising, ad spend, account management, guaranteed results, or
+          third-party subscription fees. Payment arrangements are confirmed
+          directly before work begins.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <figure class="about-photo">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+          alt="A team collaborating on creative work"
+          width="1000" height="667"
+          loading="lazy" decoding="async">
+      </figure>
+
+      <div class="about-copy">
+        <div class="eyebrow">About 5,880 Concepts</div>
+        <h2>Your ideas. Your voice. A clearer plan.</h2>
+        <p>
+          5,880 Concepts helps coaches and consultants turn their
+          knowledge into practical marketing materials. We combine
+          AI-assisted creativity with human review to help make
+          your message clearer and your content easier to organize.
+        </p>
+        <p>
+          Our approach is simple: understand your goals, develop
+          useful ideas, and create materials for you to review.
+          You stay in control of your message and final approvals.
+        </p>
+        <a class="btn" href="#contact">Let's Talk About Your Goals</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="soft-section" id="process">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">How it works</div>
+        <h2>Three simple steps</h2>
+        <p>A straightforward process from first conversation to delivery.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">01</div>
+          <h3>Tell Us About Your Business</h3>
+          <p>
+            Share your audience, services, goals, brand style,
+            and the content you need.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">02</div>
+          <h3>We Develop Your Content</h3>
+          <p>
+            We prepare the agreed content plan and creative
+            materials for your review.
+          </p>
+        </article>
+
+        <article class="step">
+          <div class="step-number">03</div>
+          <h3>Review and Refine</h3>
+          <p>
+            You review the work, provide feedback, and receive
+            the agreed final materials.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">Your next idea starts here</div>
+      <h2>Let's build your next content plan.</h2>
+      <p>
+        Tell us about your business and what you're trying to
+        accomplish. We'll discuss the right starting point,
+        package scope, and next steps.
+      </p>
+      <a class="btn"
+         href="mailto:theironrod5880@gmail.com?subject=5%2C880%20Concepts%20Inquiry">
+        Contact 5,880 Concepts
+      </a>
+      <div class="contact-email-wrap">
+        <a class="contact-email" href="mailto:theironrod5880@gmail.com">
+          theironrod5880@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
     <div>
-      <h1>AI-assisted marketing for coaches and consultants.</h1>
-      <p>Plan, create, and grow your content without losing your voice. 5,880 Concepts helps you turn expertise into clear, consistent social media.</p>
-      <a class="btn" href="#starter">Explore the $79 AI Social Starter</a>
-      <a class="btn btn-outline" href="#services" style="margin-left:.5rem">See how it works</a>
+      <strong>5,880 Concepts</strong><br>
+      Imagine It. Create It. Grow It.
     </div>
-    <div class="hero-card">
-      <h3 style="color:#fff;margin-bottom:.5rem">Imagine It. Create It. Grow It.</h3>
-      <p style="color:#E6ECF7;margin:0">A simple system for coaches and consultants who want practical marketing support.</p>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
     </div>
-  </div>
-</section>
-
-<section class="section" id="services">
-  <div class="container">
-    <h2>Practical marketing support</h2>
-    <p class="lead">You bring the expertise. We help shape it into content that is clear, useful, and consistent.</p>
-    <div class="cards">
-      <div class="card"><h3>Content Strategy</h3><p>Simple plans that map your offers, audience, and weekly posting rhythm.</p></div>
-      <div class="card"><h3>AI-Assisted Drafts</h3><p>Prompts and drafts that sound like you—not like a generic template.</p></div>
-      <div class="card"><h3>Canva Templates</h3><p>On-brand graphics in navy, gold, and white for posts, carousels, and stories.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt" id="starter">
-  <div class="container">
-    <h2>AI Social Starter — $79</h2>
-    <p class="lead">A clear starting point for coaches and consultants who want to post with less guesswork and more direction.</p>
-    <div class="cards">
-      <div class="card"><h3>7-Day Content Plan</h3><p>A week of post ideas mapped to your goals.</p></div>
-      <div class="card"><h3>AI Prompt Pack</h3><p>Prompts for captions, hooks, carousels, and CTAs.</p></div>
-      <div class="card"><h3>Canva Starter Templates</h3><p>Editable graphics in your brand colors.</p></div>
-    </div>
-    <p style="margin-top:1.5rem"><a class="btn" href="#contact">Ask about the $79 package</a></p>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="container">
-    <h2>About 5,880 Concepts</h2>
-    <p class="lead">5,880 Concepts is an AI-assisted marketing service for coaches and consultants. We believe marketing should be clear, practical, and sustainable. Imagine It. Create It. Grow It.</p>
-    <img src="hero.jpg" alt="Coach working at a desk" style="width:100%; border-radius:16px; margin-top: 2rem;">
-  </div>
-</section>
-
-<section class="section section-alt" id="contact">
-  <div class="container">
-    <h2>Let’s build your next content plan</h2>
-    <p class="lead">Send a message and tell us what you’re working on. We’ll reply with next steps.</p>
-    <p><a class="btn" href="mailto:theironrod5880@gmail.com">theironrod5880@gmail.com</a></p>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p><strong>5,880 Concepts</strong> — Imagine It. Create It. Grow It.</p>
-    <p><a href="#services">Services</a> · <a href="#starter">AI Social Starter</a> · <a href="#contact">Contact</a></p>
-    <p style="margin-top:1rem;font-size:.9rem;color:#9FB0CC">© 2026 5,880 Concepts. All rights reserved.</p>
+    <div>&copy; <span id="year">2026</span> 5,880 Concepts</div>
   </div>
 </footer>
-</body>
-</html>
+
+<script>
+  // Keep the copyright year current automatically.
+  document.getElementById('year').text

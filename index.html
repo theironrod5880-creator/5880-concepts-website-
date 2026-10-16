@@ -9,11 +9,9 @@
 <meta name="description" content="AI-powered digital marketing for growing businesses. Content strategy, AI-assisted drafts, and promotional graphics for coaches and consultants.">
 <link rel="canonical" href="https://theironrod5880-creator.github.io/5880-concepts-website-/">
 
-<!-- Favicon (inline SVG — no extra file needed) -->
 <link rel="icon" type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='18,95 18,50 28,28 28,95' fill='%23e6b94f'/%3E%3Crect x='38' y='30' width='6' height='65' fill='%23e6b94f'/%3E%3Crect x='47' y='5' width='6' height='90' fill='%23e6b94f'/%3E%3Crect x='56' y='30' width='6' height='65' fill='%23e6b94f'/%3E%3Cpolygon points='82,95 82,50 72,28 72,95' fill='%23e6b94f'/%3E%3C/svg%3E">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="5,880 Concepts">
 <meta property="og:title" content="5,880 Concepts | AI-Powered Digital Marketing">
@@ -78,7 +76,6 @@ a { color: inherit; }
 }
 .skip-link:focus { transform: translateY(0); }
 
-/* ---------- Focus visibility ---------- */
 a:focus-visible,
 .btn:focus-visible {
   outline: 3px solid var(--gold);
@@ -118,10 +115,7 @@ header {
   display: block;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
+.logo-text { display: flex; flex-direction: column; }
 
 .logo-text strong {
   font-size: 1.15rem;
@@ -164,11 +158,7 @@ header {
   transition: background .2s, border-color .2s, transform .2s, color .2s;
 }
 
-.nav-fb svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
+.nav-fb svg { width: 18px; height: 18px; fill: currentColor; }
 
 .nav-fb:hover {
   background: var(--gold);
@@ -190,18 +180,21 @@ header {
   transition: transform .2s, background .2s;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  background: #f1cd75;
-}
+.btn:hover { transform: translateY(-2px); background: #f1cd75; }
 
 .btn-outline {
   background: transparent;
   color: white;
   border-color: rgba(255,255,255,.6);
 }
-
 .btn-outline:hover { color: var(--navy); }
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.btn-outline-dark:hover { background: var(--navy); color: white; }
 
 .btn-fb {
   background: #1877f2;
@@ -211,21 +204,9 @@ header {
   align-items: center;
   gap: 10px;
 }
+.btn-fb svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+.btn-fb:hover { background: #0f66d9; border-color: #0f66d9; color: white; }
 
-.btn-fb svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
-.btn-fb:hover {
-  background: #0f66d9;
-  border-color: #0f66d9;
-  color: white;
-}
-
-/* PayPal button */
 .btn-paypal {
   background: var(--paypal);
   border-color: var(--paypal);
@@ -235,19 +216,8 @@ header {
   justify-content: center;
   gap: 9px;
 }
-
-.btn-paypal svg {
-  width: 17px;
-  height: 17px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
-.btn-paypal:hover {
-  background: var(--paypal-dark);
-  border-color: var(--paypal-dark);
-  color: white;
-}
+.btn-paypal svg { width: 17px; height: 17px; fill: currentColor; flex-shrink: 0; }
+.btn-paypal:hover { background: var(--paypal-dark); border-color: var(--paypal-dark); color: white; }
 
 .contact-actions {
   display: flex;
@@ -289,7 +259,6 @@ h1 {
   margin: 17px 0;
   letter-spacing: -2px;
 }
-
 h1 span { color: var(--gold); }
 
 .hero p {
@@ -344,17 +313,10 @@ h1 span { color: var(--gold); }
   background: rgba(16,27,53,.92);
   color: white;
 }
-
-.photo-label strong {
-  display: block;
-  color: var(--gold);
-}
+.photo-label strong { display: block; color: var(--gold); }
 
 /* ---------- Sections ---------- */
-section {
-  padding: 76px 0;
-  scroll-margin-top: 20px;
-}
+section { padding: 76px 0; scroll-margin-top: 20px; }
 
 .section-heading {
   text-align: center;
@@ -397,15 +359,8 @@ section {
   font-size: 1.5rem;
 }
 
-.feature h3 {
-  color: var(--navy);
-  margin-bottom: 8px;
-}
-
-.feature p {
-  color: var(--muted);
-  margin-bottom: 0;
-}
+.feature h3 { color: var(--navy); margin-bottom: 8px; }
+.feature p { color: var(--muted); margin-bottom: 0; }
 
 .soft-section { background: var(--cream); }
 
@@ -446,11 +401,7 @@ section {
   margin-bottom: 10px;
 }
 
-.price-card h3 {
-  color: var(--navy);
-  font-size: 1.35rem;
-  margin: 8px 0;
-}
+.price-card h3 { color: var(--navy); font-size: 1.35rem; margin: 8px 0; }
 
 .price {
   font-size: 2.5rem;
@@ -460,26 +411,13 @@ section {
   margin: 12px 0;
 }
 
-.price small {
-  font-size: .85rem;
-  font-weight: 400;
-  color: var(--muted);
-}
-
+.price small { font-size: .85rem; font-weight: 400; color: var(--muted); }
 .price-card > p { color: var(--muted); }
 
-.price-card ul {
-  padding-left: 20px;
-  margin: 10px 0 25px;
-  flex: 1;
-}
-
+.price-card ul { padding-left: 20px; margin: 10px 0 25px; flex: 1; }
 .price-card li { margin-bottom: 9px; }
 
-.price-card .btn {
-  text-align: center;
-  margin-top: auto;
-}
+.price-card .btn { text-align: center; margin-top: auto; }
 
 .price-card .btn-dark {
   background: var(--navy);
@@ -487,7 +425,7 @@ section {
   color: white;
 }
 
-/* ---------- Package disclaimer ---------- */
+/* ---------- Note / disclaimer box ---------- */
 .note {
   max-width: 860px;
   margin: 26px auto 0;
@@ -502,19 +440,256 @@ section {
   line-height: 1.6;
 }
 
-.note strong {
-  color: var(--navy);
-  display: block;
-  margin-bottom: 4px;
-}
-
-.note a {
-  color: var(--paypal);
-  font-weight: 700;
-  text-decoration: none;
-}
-
+.note strong { color: var(--navy); display: block; margin-bottom: 4px; }
+.note a { color: var(--paypal); font-weight: 700; text-decoration: none; }
 .note a:hover { text-decoration: underline; }
+
+/* ---------- Legal blocks ---------- */
+.legal-block {
+  max-width: 860px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px 40px;
+  box-shadow: 0 10px 30px rgba(16,27,53,.05);
+}
+
+.legal-block-tight { padding: 32px 40px; }
+
+.legal-block h3 {
+  color: var(--navy);
+  font-size: 1.1rem;
+  margin: 24px 0 8px;
+  line-height: 1.3;
+}
+.legal-block h3:first-child { margin-top: 0; }
+
+.legal-block p,
+.legal-block li {
+  color: #4b5563;
+  font-size: .95rem;
+  line-height: 1.65;
+}
+
+.legal-block ul { padding-left: 22px; margin: 6px 0 18px; }
+.legal-block li { margin-bottom: 6px; }
+.legal-block a { color: var(--paypal); font-weight: 700; text-decoration: none; }
+.legal-block a:hover { text-decoration: underline; }
+
+.legal-updated {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: .85rem !important;
+  color: var(--muted) !important;
+}
+
+/* ---------- Order form ---------- */
+.order-form {
+  max-width: 820px;
+  margin: 0 auto;
+  background: white;
+  padding: 36px 32px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 40px rgba(16,27,53,.07);
+}
+
+.form-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 34px;
+}
+
+.form-fieldset legend {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--navy);
+  letter-spacing: .3px;
+  padding: 0 0 14px;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-fieldset-last { margin-bottom: 10px; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-field { display: flex; flex-direction: column; }
+.form-full { grid-column: 1 / -1; }
+
+.form-field label {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: .92rem;
+  margin-bottom: 6px;
+}
+
+.form-field label span[aria-hidden] { color: #b91c1c; }
+.form-field label small { font-weight: 400; color: var(--muted); font-size: .8rem; }
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text);
+  background: #fbfbfb;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(230,185,79,.25);
+}
+
+.form-field textarea { resize: vertical; min-height: 110px; }
+
+.form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #667085 50%),
+    linear-gradient(135deg, #667085 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) 50%,
+    calc(100% - 15px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--navy);
+}
+
+.checkbox-label a { color: var(--paypal); font-weight: 700; text-decoration: none; }
+.checkbox-label a:hover { text-decoration: underline; }
+
+.form-consent { margin-bottom: 14px; }
+
+.form-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: .88rem;
+  margin: 20px 0 0;
+}
+
+.form-note a { color: var(--paypal); font-weight: 700; text-decoration: none; }
+.form-note a:hover { text-decoration: underline; }
+
+.form-success {
+  margin-top: 24px;
+  padding: 18px 22px;
+  border-radius: 10px;
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  color: #065f46;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.form-success p { margin: 8px 0; }
+
+.form-success-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* ---------- Payment methods ---------- */
+.pay-alt-heading {
+  text-align: center;
+  color: var(--navy);
+  font-size: 1.3rem;
+  margin: 60px 0 26px;
+  letter-spacing: .3px;
+}
+
+.pay-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pay-method {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(16,27,53,.05);
+  transition: transform .18s, box-shadow .18s;
+}
+
+.pay-method:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(16,27,53,.1);
+}
+
+.pay-method-head { display: flex; align-items: center; gap: 10px; }
+.pay-method-icon { font-size: 1.5rem; line-height: 1; }
+.pay-method h4 { color: var(--navy); font-size: 1.05rem; margin: 0; font-weight: 800; }
+.pay-method p { color: var(--muted); font-size: .88rem; margin: 0; line-height: 1.5; flex: 1; }
+
+.pay-link {
+  display: inline-block;
+  color: var(--paypal);
+  font-weight: 800;
+  font-size: .95rem;
+  text-decoration: none;
+  word-break: break-word;
+  padding: 6px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+}
+.pay-link:hover { text-decoration: underline; }
+.pay-link-static { color: var(--navy); cursor: text; }
+
+.pricing-pay { margin-bottom: 0; }
 
 /* ---------- About ---------- */
 .about-grid {
@@ -536,7 +711,6 @@ section {
   line-height: 1.2;
   color: var(--navy);
 }
-
 .about-copy p { color: var(--muted); }
 
 /* ---------- Steps ---------- */
@@ -546,41 +720,39 @@ section {
   gap: 22px;
 }
 
+.steps-four { grid-template-columns: repeat(4, 1fr); }
+
 .step {
   padding: 24px;
   background: white;
   border-radius: 12px;
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
-.step-number {
-  color: var(--gold-dark);
-  font-size: 2rem;
-  font-weight: 900;
-}
-
+.step-number { color: var(--gold-dark); font-size: 2rem; font-weight: 900; }
 .step h3 { color: var(--navy); }
+.step p { color: var(--muted); flex: 1; }
+
+.step-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--paypal);
+  font-weight: 800;
+  font-size: .88rem;
+  text-decoration: none;
+}
+.step-link:hover { text-decoration: underline; }
+
+.process-cta { text-align: center; margin-top: 42px; }
+.process-cta p { color: var(--muted); font-size: 1rem; margin: 0 0 14px; }
 
 /* ---------- Contact ---------- */
-.contact {
-  background: var(--navy);
-  color: white;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.15;
-}
-
-.contact p {
-  color: #e2e8f2;
-  max-width: 650px;
-  margin: 15px auto 28px;
-}
-
+.contact { background: var(--navy); color: white; text-align: center; }
+.contact h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
+.contact p { color: #e2e8f2; max-width: 650px; margin: 15px auto 28px; }
 .contact-email-wrap { margin-top: 20px; }
-
 .contact-email {
   display: inline-block;
   color: var(--gold);
@@ -589,12 +761,7 @@ section {
 }
 
 /* ---------- Footer ---------- */
-footer {
-  background: #0a1225;
-  color: #cbd5e1;
-  padding: 27px 0;
-  font-size: .88rem;
-}
+footer { background: #0a1225; color: #cbd5e1; padding: 27px 0; font-size: .88rem; }
 
 .footer-inner {
   display: flex;
@@ -604,30 +771,12 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+.footer-brand { display: flex; align-items: center; gap: 12px; }
+.footer-brand svg { width: 32px; height: 32px; flex-shrink: 0; }
 
-.footer-brand svg {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
+.footer-links { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
+footer a { color: white; text-decoration: none; }
 footer a:hover { color: var(--gold); }
 
 .footer-fb {
@@ -641,33 +790,32 @@ footer a:hover { color: var(--gold); }
   border: 1px solid rgba(255,255,255,.2);
   transition: background .2s, color .2s, border-color .2s;
 }
-
-.footer-fb svg {
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
-}
-
-.footer-fb:hover {
-  background: var(--gold);
-  color: var(--navy);
-  border-color: var(--gold);
-}
+.footer-fb svg { width: 15px; height: 15px; fill: currentColor; }
+.footer-fb:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .steps-four { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 800px) {
   .hero-grid, .about-grid { grid-template-columns: 1fr; }
   .hero { padding: 52px 0; }
   .hero-photo { min-height: 300px; }
   .about-photo { min-height: 260px; }
-  .features, .pricing, .steps { grid-template-columns: 1fr; }
+  .features, .pricing, .steps, .steps-four { grid-template-columns: 1fr; }
   .nav { align-items: flex-start; flex-direction: column; }
   .nav-links { gap: 14px; }
   section { padding: 55px 0; }
   h1 { letter-spacing: -1px; }
   .note { padding: 16px; }
+  .legal-block { padding: 26px 20px; }
   .contact-actions { flex-direction: column; }
   .contact-actions .btn { width: 100%; max-width: 320px; }
+  .order-form { padding: 26px 20px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-actions { flex-direction: column; }
+  .form-actions .btn { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -706,13 +854,14 @@ footer a:hover { color: var(--gold); }
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#packages">Packages</a>
+      <a href="#order">Order</a>
       <a href="#pay">Pay Now</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
 
       <a class="nav-fb"
-         href="https://www.facebook.com/share/1BiwVx1WUa/"
+         href="https://www.facebook.com/share/1C6reQaYdS/"
          target="_blank" rel="noopener"
          aria-label="Visit 5,880 Concepts on Facebook">
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -725,7 +874,7 @@ footer a:hover { color: var(--gold); }
 
 <main id="main" tabindex="-1">
 
-  <!-- ============ HERO ============ -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div>
@@ -736,7 +885,7 @@ footer a:hover { color: var(--gold); }
           connects with your audience—without losing your voice.
         </p>
         <div class="hero-actions">
-          <a class="btn" href="#packages">Explore Our Packages</a>
+          <a class="btn" href="#order">Start Your Design Brief</a>
           <a class="btn btn-outline" href="#services">See How It Works</a>
         </div>
       </div>
@@ -755,7 +904,7 @@ footer a:hover { color: var(--gold); }
     </div>
   </section>
 
-  <!-- ============ SERVICES ============ -->
+  <!-- SERVICES -->
   <section id="services">
     <div class="container">
       <div class="section-heading">
@@ -795,10 +944,15 @@ footer a:hover { color: var(--gold); }
           </p>
         </article>
       </div>
+
+      <div class="process-cta">
+        <p>Ready to start your project?</p>
+        <a class="btn" href="#order">Begin Your Design Brief</a>
+      </div>
     </div>
   </section>
 
-  <!-- ============ PACKAGES ============ -->
+  <!-- PACKAGES -->
   <section class="soft-section" id="packages">
     <div class="container">
       <div class="section-heading">
@@ -806,8 +960,8 @@ footer a:hover { color: var(--gold); }
         <h2>Choose the support you need</h2>
         <p>
           Clear package options for coaches and consultants.
-          Contact us to confirm scope, availability, and delivery
-          before work begins.
+          Pick one to begin your design brief — we'll confirm
+          scope before work starts.
         </p>
       </div>
 
@@ -822,9 +976,8 @@ footer a:hover { color: var(--gold); }
             <li>3 editable graphic templates</li>
             <li>One revision round</li>
           </ul>
-          <a class="btn btn-dark"
-             href="mailto:theironrod5880@gmail.com?subject=AI%20Social%20Starter%20Inquiry">
-            Ask About Starter
+          <a class="btn btn-dark" href="#order" data-package="Starter — $79">
+            Start This Package
           </a>
         </article>
 
@@ -840,9 +993,8 @@ footer a:hover { color: var(--gold); }
             <li>Suggested calls to action</li>
             <li>One revision round</li>
           </ul>
-          <a class="btn"
-             href="mailto:theironrod5880@gmail.com?subject=Growth%20Package%20Inquiry">
-            Ask About Growth
+          <a class="btn" href="#order" data-package="Growth — $149">
+            Start This Package
           </a>
         </article>
 
@@ -857,201 +1009,525 @@ footer a:hover { color: var(--gold); }
             <li>Suggested publishing schedule</li>
             <li>One revision round</li>
           </ul>
-          <a class="btn btn-dark"
-             href="mailto:theironrod5880@gmail.com?subject=Campaign%20Package%20Inquiry">
-            Ask About Campaign
+          <a class="btn btn-dark" href="#order" data-package="Campaign — $299">
+            Start This Package
           </a>
         </article>
       </div>
 
       <p class="note">
         <strong>Please note before ordering</strong>
-        Introductory package prices. Packages are proposed service
-        options and must be confirmed before purchase. They do not
-        include paid advertising, ad spend, account management,
-        guaranteed results, or third-party subscription fees.
-        Payment arrangements are confirmed directly before work begins.
+        Package prices are introductory and must be confirmed
+        before purchase. See the full
+        <a href="#disclaimer">Disclaimer</a> and
+        <a href="#terms">Terms of Service</a> for exactly what's
+        included and what isn't.
       </p>
     </div>
   </section>
-
-  <!-- ============ PAY NOW ============ -->
-  <section id="pay">
-    <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">Ready to get started?</div>
-        <h2>Pay for your package</h2>
-        <p>
-          Secure payment through PayPal. You can pay with your
-          PayPal balance, a debit or credit card, or your bank —
-          no PayPal account required.
-        </p>
-      </div>
-
-      <div class="pricing">
-        <article class="price-card">
-          <h3>Starter</h3>
-          <p>Build a foundation for your content.</p>
-          <div class="price">$79</div>
-          <a class="btn btn-paypal"
-             href="https://www.paypal.me/EarlSewell274/79"
-             target="_blank" rel="noopener"
-             aria-label="Pay $79 for the Starter package via PayPal">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/>
-            </svg>
-            Pay $79 with PayPal
-          </a>
-        </article>
-
-        <article class="price-card featured">
-          <span class="popular">MORE SUPPORT</span>
-          <h3>Growth</h3>
-          <p>Plan a fuller month of consistent content.</p>
-          <div class="price">$149</div>
-          <a class="btn btn-paypal"
-             href="https://www.paypal.me/EarlSewell274/149"
-             target="_blank" rel="noopener"
-             aria-label="Pay $149 for the Growth package via PayPal">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/>
-            </svg>
-            Pay $149 with PayPal
-          </a>
-        </article>
-
-        <article class="price-card">
-          <h3>Campaign</h3>
-          <p>Organize a focused promotional campaign.</p>
-          <div class="price">$299</div>
-          <a class="btn btn-paypal"
-             href="https://www.paypal.me/EarlSewell274/299"
-             target="_blank" rel="noopener"
-             aria-label="Pay $299 for the Campaign package via PayPal">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/>
-            </svg>
-            Pay $299 with PayPal
-          </a>
-        </article>
-      </div>
-
-      <p class="note">
-        <strong>Secure checkout</strong>
-        Payments are processed by PayPal. You'll be redirected to
-        PayPal's secure checkout to complete your payment — no
-        account information is collected on this site. After paying,
-        email your project details to
-        <a href="mailto:theironrod5880@gmail.com">theironrod5880@gmail.com</a>
-        so we can begin.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="soft-section" id="about">
-    <div class="container about-grid">
-      <div class="about-photo">
-        <img
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
-          alt="A team collaborating on creative work"
-          width="1000" height="700"
-          loading="lazy" decoding="async">
-      </div>
-      <div class="about-copy">
-        <div class="eyebrow">About 5,880 Concepts</div>
-        <h2>Your ideas. Your voice. A clearer plan.</h2>
-        <p>
-          5,880 Concepts helps coaches and consultants turn their
-          knowledge into practical marketing materials. We combine
-          AI-assisted creativity with human review to help make
-          your message clearer and your content easier to organize.
-        </p>
-        <p>
-          Our approach is simple: understand your goals, develop
-          useful ideas, and create materials for you to review.
-          You stay in control of your message and final approvals.
-        </p>
-        <a class="btn" href="#contact">Let's Talk About Your Goals</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROCESS ============ -->
-  <section id="process">
-    <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">How it works</div>
-        <h2>Three simple steps</h2>
-        <p>A straightforward process from first conversation to delivery.</p>
-      </div>
-
-      <div class="steps">
-        <article class="step">
-          <div class="step-number">01</div>
-          <h3>Tell Us About Your Business</h3>
-          <p>
-            Share your audience, services, goals, brand style,
-            and the content you need.
-          </p>
-        </article>
-
-        <article class="step">
-          <div class="step-number">02</div>
-          <h3>We Develop Your Content</h3>
-          <p>
-            We prepare the agreed content plan and creative
-            materials for your review.
-          </p>
-        </article>
-
-        <article class="step">
-          <div class="step-number">03</div>
-          <h3>Review and Refine</h3>
-          <p>
-            You review the work, provide feedback, and receive
-            the agreed final materials.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="eyebrow">Your next idea starts here</div>
-      <h2>Let's build your next content plan.</h2>
+  <!-- ORDER FORM / DESIGN BRIEF -->
+<section class="soft-section" id="order">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Step 1 — Tell us about your project</div>
+      <h2>Start your design brief</h2>
       <p>
-        Tell us about your business and what you're trying to
-        accomplish. We'll discuss the right starting point,
-        package scope, and next steps.
+        Answer the questions below. This is the brief we use to
+        begin your project — no email required. When you finish,
+        you'll be guided to the payment page.
+      </p>
+    </div>
+
+    <form id="order-form" class="order-form" novalidate>
+
+      <fieldset class="form-fieldset">
+        <legend>1. About you</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="of-name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="of-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="of-email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="of-email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="of-phone">Phone <small>(optional)</small></label>
+            <input type="tel" id="of-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-field">
+            <label for="of-business">Business Name</label>
+            <input type="text" id="of-business" name="business" autocomplete="organization">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-fieldset">
+        <legend>2. Your package</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="of-package">Package <span aria-hidden="true">*</span></label>
+            <select id="of-package" name="package" required>
+              <option value="">— Select a package —</option>
+              <option value="Starter — $79">Starter — $79</option>
+              <option value="Growth — $149">Growth — $149</option>
+              <option value="Campaign — $299">Campaign — $299</option>
+              <option value="Custom scope — discuss first">Custom scope — discuss first</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="of-contact">Preferred Contact Method</label>
+            <select id="of-contact" name="contact">
+              <option value="Facebook Messenger">Facebook Messenger</option>
+              <option value="Email">Email</option>
+              <option value="Phone call">Phone call</option>
+              <option value="Text message">Text message</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-fieldset">
+        <legend>3. Your business</legend>
+        <div class="form-grid">
+          <div class="form-field form-full">
+            <label for="of-describe">What does your business do? <span aria-hidden="true">*</span></label>
+            <textarea id="of-describe" name="describe" rows="3" required
+              placeholder="One or two sentences in plain language."></textarea>
+          </div>
+          <div class="form-field form-full">
+            <label for="of-audience">Who is your target audience? <span aria-hidden="true">*</span></label>
+            <textarea id="of-audience" name="audience" rows="2" required
+              placeholder="e.g. mid-career coaches, small business owners, fitness professionals"></textarea>
+          </div>
+          <div class="form-field form-full">
+            <label for="of-goals">What do you want this content to accomplish? <span aria-hidden="true">*</span></label>
+            <textarea id="of-goals" name="goals" rows="3" required
+              placeholder="e.g. grow email list, promote a new course, build authority on LinkedIn"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-fieldset">
+        <legend>4. Design brief</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="of-tone">Tone of voice</label>
+            <select id="of-tone" name="tone">
+              <option value="Professional & authoritative">Professional & authoritative</option>
+              <option value="Warm & encouraging">Warm & encouraging</option>
+              <option value="Bold & direct">Bold & direct</option>
+              <option value="Playful & casual">Playful & casual</option>
+              <option value="Calm & thoughtful">Calm & thoughtful</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="of-style">Visual style</label>
+            <select id="of-style" name="style">
+              <option value="Minimal & clean">Minimal & clean</option>
+              <option value="Bold & high-contrast">Bold & high-contrast</option>
+              <option value="Warm & earthy">Warm & earthy</option>
+              <option value="Corporate & polished">Corporate & polished</option>
+              <option value="Creative & editorial">Creative & editorial</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="of-colors">Brand colors <small>(hex codes or description)</small></label>
+            <input type="text" id="of-colors" name="colors"
+              placeholder="e.g. navy #101b35, gold #e6b94f">
+          </div>
+          <div class="form-field">
+            <label for="of-avoid">Things to avoid</label>
+            <input type="text" id="of-avoid" name="avoid"
+              placeholder="e.g. no stock photos, no red, no emojis">
+          </div>
+          <div class="form-field form-full">
+            <label for="of-inspire">Brands or creators you admire <small>(optional)</small></label>
+            <input type="text" id="of-inspire" name="inspire"
+              placeholder="e.g. @justinwelsh, Duolingo's voice, Notion's aesthetic">
+          </div>
+          <div class="form-field form-full">
+            <label for="of-deliverables">Specific deliverables or topics you want covered <span aria-hidden="true">*</span></label>
+            <textarea id="of-deliverables" name="deliverables" rows="4" required
+              placeholder="e.g. 4 posts about my coaching method, 3 promotional posts for a January workshop, 2 lead magnet teasers"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-fieldset form-fieldset-last">
+        <legend>5. Agreement</legend>
+        <div class="form-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" id="of-consent-disclaimer" name="consent-disclaimer" required>
+            <span>I have read and agree to the <a href="#disclaimer">Disclaimer</a> and <a href="#terms">Terms of Service</a>.</span>
+          </label>
+        </div>
+        <div class="form-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" id="of-consent-service" name="consent-service" required>
+            <span>I understand this is a <strong>custom service</strong> — not a physical product — and that payments become non-refundable once work begins.</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit Design Brief</button>
+      </div>
+
+      <div id="form-success" class="form-success" hidden role="status">
+        <strong>Brief received — thank you!</strong>
+        <p>Your design brief is ready. Copy the details below and paste them into Facebook Messenger, or continue to payment.</p>
+        <p><strong>Next step:</strong> continue to the payment page to complete your order.</p>
+        <div class="form-success-actions">
+          <a href="#pay" class="btn">Continue to Payment →</a>
+          <a href="https://www.facebook.com/share/1C6reQaYdS/" target="_blank" rel="noopener" class="btn btn-outline-dark">Open Messenger</a>
+          <button type="button" id="copy-brief" class="btn btn-outline-dark">Copy Brief Details</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- DISCLAIMER -->
+<section id="disclaimer">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Please read before ordering</div>
+      <h2>What you are purchasing</h2>
+      <p>
+        Plain English. No fine print games. Here is exactly
+        what 5,880 Concepts delivers — and what we don't.
+      </p>
+    </div>
+
+    <div class="legal-block">
+      <h3>You are purchasing a professional service — not a physical product</h3>
+      <p>
+        Every package is a custom creative service engagement.
+        Deliverables (content calendars, caption drafts, graphic
+        templates, campaign outlines) are produced specifically
+        for you as the output of that service. Because the work
+        is custom and time is spent as soon as we begin, the
+        service cannot be returned or reversed.
       </p>
 
-      <div class="contact-actions">
-        <a class="btn"
-           href="mailto:theironrod5880@gmail.com?subject=5%2C880%20Concepts%20Inquiry">
-          Email Us
-        </a>
+      <h3>What's included</h3>
+      <ul>
+        <li>The specific deliverables listed on your chosen package</li>
+        <li>The number of revision rounds stated for that package</li>
+        <li>Human review of all AI-assisted content before delivery</li>
+        <li>Delivery of final files in editable formats (where applicable)</li>
+      </ul>
 
-        <a class="btn btn-fb"
-           href="https://www.facebook.com/share/1BiwVx1WUa/"
-           target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.79 8.43-4.94 8.43-9.94z"/>
-          </svg>
-          Message Us on Facebook
-        </a>
-      </div>
+      <h3>What's <em>not</em> included</h3>
+      <ul>
+        <li>Paid advertising spend or ad management</li>
+        <li>Social media account management or posting</li>
+        <li>Third-party subscriptions (Canva Pro, scheduling tools, etc.)</li>
+        <li>Domain, hosting, or website development</li>
+        <li>Guaranteed business results, follower growth, or revenue</li>
+        <li>Legal, tax, or financial advice</li>
+      </ul>
 
-      <div class="contact-email-wrap">
-        <a class="contact-email" href="mailto:theironrod5880@gmail.com">
-          theironrod5880@gmail.com
-        </a>
-      </div>
+      <h3>AI-assistance disclosure</h3>
+      <p>
+        We use AI tools to accelerate research, drafting, and
+        ideation. Every deliverable is reviewed and edited by a
+        human before it reaches you. You are purchasing our
+        judgment, process, and review — not raw AI output.
+      </p>
+
+      <h3>No refunds after work begins</h3>
+      <p>
+        Because the service involves custom creative work, all
+        payments become non-refundable once production starts.
+        If you are unsure the package is right for you, message
+        us before paying — we are happy to answer questions first.
+      </p>
+
+      <h3>Client responsibilities</h3>
+      <p>
+        Timely delivery depends on you providing accurate
+        business information, brand assets, and feedback within
+        a reasonable window. Delays in your responses will delay
+        delivery. If information you provide is inaccurate or
+        infringes on someone else's rights, you are responsible
+        for that content.
+      </p>
+
+      <h3>Third-party platforms</h3>
+      <p>
+        Deliverables are designed to work with common social
+        platforms. We are not responsible for changes to those
+        platforms' algorithms, formatting rules, or terms of
+        service that may affect how content performs.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- TERMS & CONDITIONS -->
+<section class="soft-section" id="terms">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Terms of Service</div>
+      <h2>Service agreement</h2>
+      <p>By placing an order with 5,880 Concepts, you agree to the following terms.</p>
+    </div>
+
+    <div class="legal-block legal-block-tight">
+      <h3>1. Acceptance</h3>
+      <p>Submitting an order request or making a payment constitutes acceptance of these Terms of Service and the Disclaimer above.</p>
+
+      <h3>2. Scope of service</h3>
+      <p>The scope is limited to the deliverables listed on the purchased package. Any work beyond that scope is a separate engagement and requires a separate written agreement.</p>
+
+      <h3>3. Payment</h3>
+      <p>Payment is due as agreed at the time of order. Payment must be received before final delivery. Late or failed payments may pause or cancel the engagement.</p>
+
+      <h3>4. Revisions</h3>
+      <p>Each package includes the number of revision rounds stated on that package. Additional revisions are billed separately. A "revision round" means one consolidated set of feedback delivered as a single batch, not an unlimited series of edits.</p>
+
+      <h3>5. Timeline and delivery</h3>
+      <p>Estimated timelines begin once we receive (a) full payment, (b) your completed intake form, and (c) any brand assets requested. We will communicate proactively about any delay.</p>
+
+      <h3>6. Refunds</h3>
+      <p>All sales are final once work has begun. If no work has started and you cancel within 24 hours of payment, we will refund your payment minus any third-party processing fees.</p>
+
+      <h3>7. Intellectual property</h3>
+      <p>Upon full payment, you receive ownership of the final deliverables created specifically for you. 5,880 Concepts retains all rights to our underlying methods, templates, workflows, prompts, and know-how, and may use anonymized versions of the work in our portfolio unless you request otherwise in writing.</p>
+
+      <h3>8. Client-supplied content</h3>
+      <p>You confirm that any text, images, logos, or other content you provide is either owned by you or properly licensed, and does not infringe third-party rights. You agree to indemnify 5,880 Concepts against claims arising from content you supplied.</p>
+
+      <h3>9. Confidentiality</h3>
+      <p>We will not share your confidential business information with third parties except as required to perform the service (e.g., AI tool providers, with standard privacy protections).</p>
+
+      <h3>10. Limitation of liability</h3>
+      <p>Our total liability under any engagement is limited to the amount you paid us for that engagement. We are not liable for indirect, incidental, or consequential damages, including lost revenue, lost followers, or missed opportunities.</p>
+
+      <h3>11. Termination</h3>
+      <p>Either party may terminate the engagement in writing. If you terminate after work has begun, no refund is due. If we terminate for reasons other than your breach, we will refund the portion of work not yet performed.</p>
+
+      <h3>12. Governing law</h3>
+      <p>These terms are governed by the laws of the state in which 5,880 Concepts operates. Any dispute will be resolved in the courts of that state.</p>
+
+      <h3>13. Changes to terms</h3>
+      <p>We may update these terms at any time. The version in effect at the time of your order governs that order.</p>
+
+      <h3>14. Contact</h3>
+      <p>Questions about these terms? Message us on <a href="https://www.facebook.com/share/1C6reQaYdS/" target="_blank" rel="noopener">Facebook Messenger</a> or email <a href="mailto:theironrod5880@gmail.com">theironrod5880@gmail.com</a>.</p>
+
+      <p class="legal-updated"><strong>Last updated:</strong> <span id="terms-year">2026</span></p>
+    </div>
+  </div>
+</section>
+<!-- PAY NOW -->
+<section id="pay">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Step 2 — Secure payment</div>
+      <h2>Pay for your package</h2>
+      <p>
+        Choose the package and the payment method that works
+        best for you. All methods are secure — we never see
+        your card or bank details.
+      </p>
+    </div>
+
+    <div class="pricing pricing-pay">
+      <article class="price-card">
+        <h3>Starter</h3>
+        <p>Build a foundation for your content.</p>
+        <div class="price">$79</div>
+        <a class="btn btn-paypal" href="https://www.paypal.me/EarlSewell274/79" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/></svg>
+          Pay $79 with PayPal
+        </a>
+      </article>
+
+      <article class="price-card featured">
+        <span class="popular">MORE SUPPORT</span>
+        <h3>Growth</h3>
+        <p>Plan a fuller month of consistent content.</p>
+        <div class="price">$149</div>
+        <a class="btn btn-paypal" href="https://www.paypal.me/EarlSewell274/149" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/></svg>
+          Pay $149 with PayPal
+        </a>
+      </article>
+
+      <article class="price-card">
+        <h3>Campaign</h3>
+        <p>Organize a focused promotional campaign.</p>
+        <div class="price">$299</div>
+        <a class="btn btn-paypal" href="https://www.paypal.me/EarlSewell274/299" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.08 21.34H3.6a.7.7 0 0 1-.69-.8L5.55 3.6a.99.99 0 0 1 .97-.84h7.06c2.31 0 4.08.5 5.14 1.53.5.48.82 1.07.97 1.75.16.71.14 1.56-.06 2.6l-.01.09v.83l.64.36c.55.3.99.68 1.31 1.13.35.5.57 1.1.66 1.8.09.71.04 1.55-.15 2.5-.22 1.09-.57 2.04-1.05 2.81a5.9 5.9 0 0 1-1.66 1.83c-.63.44-1.39.77-2.25.98-.83.21-1.78.31-2.82.31h-.67a4.14 4.14 0 0 0-1.19.15 3.7 3.7 0 0 0-1.05.52c-.3.22-.53.35-.7.4l-.1.02h-.01Z"/></svg>
+          Pay $299 with PayPal
+        </a>
+      </article>
+    </div>
+
+    <h3 class="pay-alt-heading">Other payment methods</h3>
+
+    <div class="pay-methods">
+      <article class="pay-method">
+        <div class="pay-method-head">
+          <span class="pay-method-icon" aria-hidden="true">💵</span>
+          <h4>Cash App</h4>
+        </div>
+        <p>Send to our Cashtag and include your package name in the note.</p>
+        <!-- SWAP: replace $YourCashtag below with your real Cashtag -->
+        <a class="pay-link" href="https://cash.app/$YourCashtag" target="_blank" rel="noopener">$YourCashtag</a>
+      </article>
+
+      <article class="pay-method">
+        <div class="pay-method-head">
+          <span class="pay-method-icon" aria-hidden="true">💸</span>
+          <h4>Venmo</h4>
+        </div>
+        <p>Send to our Venmo handle and note which package you're paying for.</p>
+        <!-- SWAP: replace YourVenmo below with your real handle -->
+        <a class="pay-link" href="https://venmo.com/u/YourVenmo" target="_blank" rel="noopener">@YourVenmo</a>
+      </article>
+
+      <article class="pay-method">
+        <div class="pay-method-head">
+          <span class="pay-method-icon" aria-hidden="true">🏦</span>
+          <h4>Zelle</h4>
+        </div>
+        <p>Send via your bank's Zelle feature using our email address.</p>
+        <span class="pay-link pay-link-static">theironrod5880@gmail.com</span>
+      </article>
+
+      <article class="pay-method">
+        <div class="pay-method-head">
+          <span class="pay-method-icon" aria-hidden="true">💳</span>
+          <h4>Credit / Debit Card</h4>
+        </div>
+        <p>Prefer to pay by card? Request a secure card link and we'll send one.</p>
+        <a class="pay-link" href="https://www.facebook.com/share/1C6reQaYdS/" target="_blank" rel="noopener">Request card link →</a>
+      </article>
+    </div>
+
+    <p class="note">
+      <strong>How payment works</strong>
+      Send payment using your chosen method and include your
+      package name and email address in the note. We'll confirm
+      receipt by email within one business day and begin your
+      project. If you'd rather pay after we've confirmed scope,
+      just submit the design brief first — no payment is due
+      until both sides agree on the details.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="soft-section" id="about">
+  <div class="container about-grid">
+    <div class="about-photo">
+      <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+        alt="A team collaborating on creative work"
+        width="1000" height="700"
+        loading="lazy" decoding="async">
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow">About 5,880 Concepts</div>
+      <h2>Your ideas. Your voice. A clearer plan.</h2>
+      <p>
+        5,880 Concepts helps coaches and consultants turn their
+        knowledge into practical marketing materials. We combine
+        AI-assisted creativity with human review to help make
+        your message clearer and your content easier to organize.
+      </p>
+      <p>
+        Our approach is simple: understand your goals, develop
+        useful ideas, and create materials for you to review.
+        You stay in control of your message and final approvals.
+      </p>
+      <a class="btn" href="#contact">Let's Talk About Your Goals</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">How it works</div>
+      <h2>Four steps from idea to finished content</h2>
+      <p>A clear path. You always know what happens next and what we need from you.</p>
+    </div>
+
+    <div class="steps steps-four">
+      <article class="step">
+        <div class="step-number">01</div>
+        <h3>Choose your package</h3>
+        <p>Browse Services and Packages to see what fits your goals. Not sure? Pick "Custom scope" in the brief and we'll recommend one.</p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">02</div>
+        <h3>Complete your design brief</h3>
+        <p>Fill out the guided brief — audience, tone, colors, visual style, deliverables. This is what lets us design around <em>your</em> brand, not a template.</p>
+        <a class="step-link" href="#order">Start your brief →</a>
+      </article>
+
+      <article class="step">
+        <div class="step-number">03</div>
+        <h3>Review the direction</h3>
+        <p>Based on your brief, we confirm scope and direction with you before production starts. No surprises, no guessing.</p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">04</div>
+        <h3>Pay and receive your work</h3>
+        <p>Complete payment through your preferred method. We deliver your finished content, you request your included revision round, we finalize.</p>
+        <a class="step-link" href="#pay">Go to payment →</a>
+      </article>
+    </div>
+
+    <div class="process-cta">
+      <p>Ready to start?</p>
+      <a class="btn" href="#order">Begin Your Design Brief</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="eyebrow">Your next idea starts here</div>
+    <h2>Let's build your next content plan.</h2>
+    <p>
+      Tell us about your business and what you're trying to
+      accomplish. We'll discuss the right starting point,
+      package scope, and next steps.
+    </p>
+
+    <div class="contact-actions">
+      <a class="btn"
+         href="https://www.facebook.com/share/1C6reQaYdS/"
+         target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px;fill:currentColor">
+          <path d="M12 2C6.48 2 2 6.14 2 11.24c0 2.9 1.44 5.49 3.7 7.18V22l3.38-1.86c.91.25 1.88.39 2.92.39 5.52 0 10-4.14 10-9.24S17.52 2 12 2zm1.06 12.42-2.55-2.72-4.97 2.72L11.1 9.1l2.6 2.72 4.92-2.72-5.56 5.32z"/>
+        </svg>
+        Message Us on Facebook
+      </a>
+
+      <a class="btn btn-outline"
+         href="mailto:theironrod5880@gmail.com?subject=5%2C880%20Concepts%20Inquiry">
+        Email Us
+      </a>
+    </div>
+
+    <div class="contact-email-wrap">
+      <a class="contact-email" href="mailto:theironrod5880@gmail.com">
+        theironrod5880@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer>
@@ -1074,13 +1550,16 @@ footer a:hover { color: var(--gold); }
     <div class="footer-links">
       <a href="#services">Services</a>
       <a href="#packages">Packages</a>
+      <a href="#order">Order</a>
       <a href="#pay">Pay Now</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
+      <a href="#disclaimer">Disclaimer</a>
+      <a href="#terms">Terms</a>
       <a href="#contact">Contact</a>
 
       <a class="footer-fb"
-         href="https://www.facebook.com/share/1BiwVx1WUa/"
+         href="https://www.facebook.com/share/1C6reQaYdS/"
          target="_blank" rel="noopener"
          aria-label="Visit 5,880 Concepts on Facebook">
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1094,7 +1573,91 @@ footer a:hover { color: var(--gold); }
 </footer>
 
 <script>
+  // Year in footer + terms
   document.getElementById('year').textContent = new Date().getFullYear();
+  var ty = document.getElementById('terms-year');
+  if (ty) ty.textContent = new Date().getFullYear();
+
+  // Order form handler
+  (function () {
+    var form = document.getElementById('order-form');
+    if (!form) return;
+
+    var success = document.getElementById('form-success');
+    var copyBtn = document.getElementById('copy-brief');
+
+    // Preselect package when a package card button is clicked
+    document.querySelectorAll('[data-package]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var pkg = link.getAttribute('data-package');
+        var select = document.getElementById('of-package');
+        if (select && pkg) select.value = pkg;
+      });
+    });
+
+    // Build brief text
+    function buildBriefText() {
+      var d = new FormData(form);
+      var lines = [
+        'DESIGN BRIEF — 5,880 CONCEPTS',
+        '——————————————————————————————',
+        'Name:        ' + (d.get('name') || ''),
+        'Email:       ' + (d.get('email') || ''),
+        'Phone:       ' + (d.get('phone') || '—'),
+        'Business:    ' + (d.get('business') || '—'),
+        'Package:     ' + (d.get('package') || ''),
+        'Contact via: ' + (d.get('contact') || ''),
+        '',
+        'BUSINESS',
+        'What they do:  ' + (d.get('describe') || ''),
+        'Audience:      ' + (d.get('audience') || ''),
+        'Goals:         ' + (d.get('goals') || ''),
+        '',
+        'DESIGN BRIEF',
+        'Tone:          ' + (d.get('tone') || ''),
+        'Visual style:  ' + (d.get('style') || ''),
+        'Colors:        ' + (d.get('colors') || '—'),
+        'Avoid:         ' + (d.get('avoid') || '—'),
+        'Inspiration:   ' + (d.get('inspire') || '—'),
+        'Deliverables:  ' + (d.get('deliverables') || ''),
+        '——————————————————————————————'
+      ];
+      return lines.join('\n');
+    }
+
+    // Copy button
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function () {
+        var briefText = buildBriefText();
+        navigator.clipboard.writeText(briefText).then(function () {
+          copyBtn.textContent = '✓ Copied';
+          setTimeout(function () {
+            copyBtn.textContent = 'Copy Brief Details';
+          }, 2000);
+        });
+      });
+    }
+
+    // Submit
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // TODO: Replace the two lines below with a real form endpoint
+      // (Formspree, Netlify Forms, etc.) if you want automatic delivery.
+      // Currently the success message + copy button let the client send
+      // their brief via Messenger or email.
+
+      if (success) {
+        success.hidden = false;
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  })();
 </script>
 
 <script type="application/ld+json">
@@ -1106,44 +1669,20 @@ footer a:hover { color: var(--gold); }
   "description": "AI-powered digital marketing for growing businesses. Content strategy, AI-assisted drafts, and promotional graphics for coaches and consultants.",
   "email": "theironrod5880@gmail.com",
   "url": "https://theironrod5880-creator.github.io/5880-concepts-website-/",
-  "sameAs": [
-    "https://www.facebook.com/share/1BiwVx1WUa/"
-  ],
+  "sameAs": ["https://www.facebook.com/share/1C6reQaYdS/"],
   "priceRange": "$79-$299",
-  "serviceType": [
-    "Content Strategy",
-    "AI-Assisted Content Drafts",
-    "Promotional Graphic Design"
-  ],
+  "serviceType": ["Content Strategy", "AI-Assisted Content Drafts", "Promotional Graphic Design"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Marketing Packages",
     "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Starter",
-        "price": "79",
-        "priceCurrency": "USD",
-        "description": "7-day content plan, AI prompt pack, 3 editable graphic templates, one revision round."
-      },
-      {
-        "@type": "Offer",
-        "name": "Growth",
-        "price": "149",
-        "priceCurrency": "USD",
-        "description": "30-day content calendar, 12 post concepts and caption drafts, 5 branded graphic templates, suggested calls to action, one revision round."
-      },
-      {
-        "@type": "Offer",
-        "name": "Campaign",
-        "price": "299",
-        "priceCurrency": "USD",
-        "description": "Campaign outline and messaging, 15 post concepts and caption drafts, 6 promotional graphic concepts, suggested publishing schedule, one revision round."
-      }
+      { "@type": "Offer", "name": "Starter",  "price": "79",  "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Growth",   "price": "149", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Campaign", "price": "299", "priceCurrency": "USD" }
     ]
   }
 }
 </script>
 
 </body>
-      </html>
+</html>

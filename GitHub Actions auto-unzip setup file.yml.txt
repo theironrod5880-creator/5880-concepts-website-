@@ -1,4 +1,4 @@
-name: Deploy Affordable Series from zip
+name: Deploy tattoo Series from zip
 
 on:
   push:

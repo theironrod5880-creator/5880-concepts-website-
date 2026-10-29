@@ -1,0 +1,31 @@
+WEBSITE GALLERY — SETUP STEPS
+==============================
+
+This page markets Earl's website builds. It is NOT live until
+you upload it. Only two links on it were verified live when it
+was built (5,880 Concepts and Melvin the Tree Guy). The other
+three cards say "In progress" on purpose — add their links in
+index.html only when those sites are actually live. Do not
+invent a link.
+
+1. OPTIONAL: in index.html, replace the REPLACE line in the
+   contact box with a phone number, or delete that line.
+
+2. MAKE THE ZIP
+   Zip index.html alone (flat, at the top of the zip, no
+   folder). Name the zip: site.zip
+   Do NOT put the workflow file inside the zip.
+
+3. UPLOAD TO GITHUB (same auto-unzip setup as the other sites)
+   a. Upload site.zip to the main folder (root) of the
+      repository.
+   b. Put the workflow file in the repository at this exact
+      path: .github/workflows/pages-unzip.yml
+   c. Go to Settings > Pages > Build and deployment, and set
+      Source to GitHub Actions.
+   d. Check the Actions tab. A green check means it worked.
+
+4. TO UPDATE LATER
+   Replace site.zip with a new zip. Add a new card in
+   index.html for each new site, with its live link only
+   after you have checked the link loads.
